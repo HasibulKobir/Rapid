@@ -3,7 +3,7 @@ make
 autoconf
 libc-dev
 pkg-config
-php7.2-dev
+
 libmcrypt-dev
 apache2-prefork-dev
 libssl-dev
