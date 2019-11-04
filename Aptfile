@@ -8,4 +8,6 @@ apache2-prefork-dev
 libssl-dev
 mcrypt
 libreadline-dev
-php7.0-mcrypt
+php7.1-mcrypt
+php7.1-common
+php7.1-zip
