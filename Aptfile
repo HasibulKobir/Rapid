@@ -22,6 +22,7 @@ node-gyp
 node-pty
 node.js
 npm
+libjs-websocket 
 libjs-bowser
 libjs-events
 libjs-is-typedarray
@@ -31,7 +32,6 @@ libjs-rtcninja
 libjs-sdp-transform
 libjs-typedarray-to-buffer 
 libjs-util 
-libjs-websocket 
 node-bowser 
 node-debug 
 node-events 
