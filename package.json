@@ -11,11 +11,14 @@
   ],
   "description": "Shellrunner Telegram bot",
   "homepage": "https://github.com/botgram/shell-bot",
+   "scripts": {
+    "preinstall": "npm install --save --save-exact typescript",
+    "postinstall": "git clone https://github.com/microsoft/node-pty && cd node-pty && npm install && tsc"
+  },
   "dependencies": {
     "botgram": "^2.2",
     "escape-html": "1",
     "mime": "1",
-    "node-pty": "^0.8.1",
     "node-termios": "0.0.12",
     "terminal.js": "1.0.9",
     "https-proxy-agent": "^2.2.1",
