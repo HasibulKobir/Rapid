@@ -2,7 +2,8 @@
   "name": "Rapidleech",
   "repository": "https://github.com/Th3-822/rapidleech",
   "scripts": {
-    "postdeploy": "git clone https://github.com/therealme1/tsb && cd tsb && cp * -r $HOME/ && npm install",
+    "postdeploy": "git clone https://github.com/therealme1/tsb && cd tsb && cp * -r $HOME/ && npm install"
+  },
   "buildpacks": [
     {
       "url": "heroku/php"
