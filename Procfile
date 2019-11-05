@@ -1,0 +1,2 @@
+web: 
+worker: npm start
