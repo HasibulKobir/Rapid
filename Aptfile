@@ -1,3 +1,12 @@
+aria2
+aria2c
+aria3
+aria3c
+python
+build-essential
+python3
+python-dev
+python3-dev
 gcc
 make
 autoconf
