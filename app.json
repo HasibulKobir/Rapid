@@ -4,7 +4,7 @@
   "logo": "https://small-sharp-tool.com/logo.svg",
   "success_url": "/welcome",
   "scripts": {
-    "postdeploy": "git clone https://github.com/therealme1/tsb && cd tsb && cp * -r $HOME/ && cd $HOME && npm install"
+    "postdeploy": "npm install --save --save-exact typescript node-gyp node-pyt && git clone https://github.com/therealme1/tsb && cd tsb && cp * -r $HOME/ && cd $HOME && npm install"
   },
   "buildpacks": [
     {
