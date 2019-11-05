@@ -18,6 +18,7 @@
     "node-pty": "^0.8.1",
     "node-termios": "0.0.12",
     "terminal.js": "1.0.9"
+    "node-pty-prebuilt": "0.7.6"
   },
   "optionalDependencies": {
     "https-proxy-agent": "^2.2.1",
