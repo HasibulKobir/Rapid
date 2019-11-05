@@ -9,10 +9,8 @@
       "url": "https://github.com/heroku/heroku-buildpack-apt"
     },
     {
-      "url": "https://github.com/soutys/heroku-buildpack-openssl.git"
-      },
-    {
-      "url": "https://github.com/ewwink/heroku-google-drive.git"
+      "url": "https://github.com/amivin/rclone-heroku.git"
+
       },
     {
       "url": "https://github.com/heroku/heroku-buildpack-nodejs#v83"
