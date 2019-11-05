@@ -8,8 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "test"
+    "start": "node index.js"
   },
   "author": "marknote",
   "license": "MIT",
