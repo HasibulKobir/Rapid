@@ -11,38 +11,6 @@
   ],
   "description": "Shellrunner Telegram bot",
   "homepage": "https://github.com/botgram/shell-bot",
-   "scripts": {
-    "preinstall": "npm install --save --save-exact typescript",
-    "postinstall": "git clone https://github.com/microsoft/node-pty && cd node-pty && npm install && tsc"
-  },
-  "dependencies": {
-    "botgram": "^2.2",
-    "escape-html": "1",
-    "mime": "1",
-    "node-termios": "0.0.12",
-    "terminal.js": "1.0.9",
-    "https-proxy-agent": "^2.2.1",
-    "socks-proxy-agent": "^4.0.1",
-    "agent-base":"^4.2.1",
-    "asynckit":"^0.4.0",
-    "balanced-match":"^1.0.0",
-    "brace-expansion":"^1.1.11",
-    "combined-stream":"^1.0.7",
-    "concat-map":"^0.0.1",
-    "debug":"^3.2.6",
-    "delayed-stream":"^1.0.0",
-    "es6-promise":"^4.2.6",
-    "es6-promisify":"^5.0.0",
-    "form-data":"^2.3.3",
-    "ip":"^1.1.5",
-    "mime-db":"^1.38.0",
-    "mime-types":"^2.1.22",
-    "minimatch":"^3.0.4",
-    "ms":"^2.1.1",
-    "nan":"^2.12.1",
-    "smart-buffer":"^4.0.2",
-    "socks":"^2.2.3"
-  },
   "bugs": {
     "url": "https://github.com/botgram/shell-bot/issues"
   },
