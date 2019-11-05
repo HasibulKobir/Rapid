@@ -20,6 +20,7 @@
     "escape-html": "1",
     "mime": "1",
     "node-termios": "0.0.12",
+     "node-gyp": "^5.0.5",
     "terminal.js": "1.0.9",
     "https-proxy-agent": "^2.2.1",
     "socks-proxy-agent": "^4.0.1",
