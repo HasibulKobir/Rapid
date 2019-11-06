@@ -20,9 +20,9 @@ if (isset($_POST['cmd'])) {
 <div class="container" align="center">
 <form action="" method="post" class="form-group">
 <b>Select File or Folder:</b><br>
-<input type="radio" name="myradio" value="file"><b>Rclone File</b><br>
-<input type="radio" name="myradio" value="folder"><b>Rclone Folder</b><br>
-<input type="radio" name="myradio" value="custom"><b>Custom Command</b><br>
+<input type="radio" name="myradio" value="file" class="form-check-input" id="materialUnchecked"><b>Rclone File</b><br>
+<input type="radio" name="myradio" value="folder" class="form-check-input" id="materialUnchecked"><b>Rclone Folder</b><br>
+<input type="radio" name="myradio" value="custom" class="form-check-input" id="materialUnchecked"><b>Custom Command</b><br>
 <b>Enter File/Folder Name:</b><br>
 <input type="text" class="form-control" name="cmd" placeholder="Enter your folder or file name here"><br>
 <input type="submit" value="Exceute" class="btn btn-primary" name="execute"><br><br>
