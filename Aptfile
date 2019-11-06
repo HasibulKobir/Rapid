@@ -13,3 +13,5 @@ libreadline-dev
 libssl1.0-dev
 unzip
 zip
+rar
+unrar
