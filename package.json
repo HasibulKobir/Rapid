@@ -1,0 +1,20 @@
+{
+  "name": "shelljsbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node keepalive.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedevxen/shelljsbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therealme1/rapidleech1"
+  },
+  "homepage": "https://github.com/therealme1/rapidleech1"
+}
