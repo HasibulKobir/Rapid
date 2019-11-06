@@ -30,7 +30,7 @@ if (isset($_POST['cmd'])) {
 
 	
 <?php if($radioval == "file") : ?>
-<?php		$cmd=shell_exec("rclone copy " .$cmd1. " Telegram:Telegram"); ?>
+<?php		$cmd=shell_exec("rclone copy /app/files/" .$cmd1. " Telegram:Telegram"); ?>
 		<?php if ($cmd) : ?>
 		<div class="pb-2 mt-4 mb-2">
             <h2> Output </h2>
@@ -41,7 +41,7 @@ if (isset($_POST['cmd'])) {
 <?php endif; ?>
 		
 <?php elseif($radioval == "folder") : ?>
-			<?php $cmd=shell_exec("rclone copy " .$cmd1. " -L Telegram:Telegram/".$cmd1); ?>
+			<?php $cmd=shell_exec("rclone copy /app/files/" .$cmd1. " -L Telegram:Telegram/".$cmd1); ?>
 		<?php	if ($cmd) : ?>
 		<div class="pb-2 mt-4 mb-2">
             <h2> Output </h2>
