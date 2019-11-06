@@ -1,6 +1,7 @@
 {
   "require": {
     "php": "7.1.33",
-    "ext-mcrypt": "*"
+    "ext-mcrypt": "*",
+    "ext-zip": "*"
     }
 }
