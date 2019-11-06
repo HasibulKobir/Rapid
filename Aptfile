@@ -11,3 +11,5 @@ libssl-dev
 mcrypt
 libreadline-dev
 libssl1.0-dev
+unzip
+zip
