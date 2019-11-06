@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/therealme1/rapidleech1"
   },
-  "homepage": "https://github.com/therealme1/rapidleech1"
+  "homepage": "https://github.com/therealme1/rapidleech1",
+  "dependencies": {
+    "http": "*"
+    }
 }
