@@ -28,7 +28,6 @@ if (isset($_POST['cmd'])) {
 <input type="radio" name="myradio" value="remove" class="form-check-input" id="materialUnchecked"><b>Remove all files from rapidleech</b><br>
 <input type="radio" name="myradio" value="rename" class="form-check-input" id="materialUnchecked"><b>Rename a File or Foler</b><br>
 <input type="text" class="form-control" name="cmd" placeholder="Enter your folder or file name here" id="enter"><br>
-<input type="submit" value="Exceute" class="btn btn-primary" name="execute"><br><br>
 <div clas=="control-group" <%--style="display:none;"-->>
 	<label class="control-label" for="rename0" id="rename0"></label>
 	<div class="controls" id="rename0">
@@ -36,6 +35,7 @@ if (isset($_POST['cmd'])) {
 		<input type="text" class="form-control" name="rename2" placeholder="Modified Name">
 	</div>
 	</div>
+	<input type="submit" value="Exceute" class="btn btn-primary" name="execute"><br><br>
 </form>
 	
 <?php if($radioval == "file") : ?>
