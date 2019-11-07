@@ -16,35 +16,20 @@ if (isset($_POST['cmd'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script>
-$(document).ready(function(){
-    $('input[name$=="myradio"]').click(function(){
-        var test = $(this).attr("value");
-	   $("div.desc").hide();
-           $("#"+test+0).show()
-    });
-});
-</script>
+	
 </head>
 
 <body>
 <div class="container" align="center">
 <form action="" method="post" class="form-group">
 <b>Select File or Folder:</b><br>
-<input type="radio" name="myradio" value="file" class="form-check-input" id="materialUnchecked"><b>Rclone File</b><br>
-<input type="radio" name="myradio" value="folder" class="form-check-input" id="materialUnchecked"><b>Rclone Folder</b><br>
-<input type="radio" name="myradio" value="custom" class="form-check-input" id="materialUnchecked"><b>Custom Command</b><br>
-<input type="radio" name="myradio" value="remove" class="form-check-input" id="materialUnchecked"><b>Remove all files from rapidleech</b><br>
-<input type="radio" name="myradio" value="rename" class="form-check-input" id="materialUnchecked"><b>Rename a File or Foler</b><br>
+<input type="radio" name="myradio" value="file" class="form-check-input"><b>Rclone File</b><br>
+<input type="radio" name="myradio" value="folder" class="form-check-input"><b>Rclone Folder</b><br>
+<input type="radio" name="myradio" value="custom" class="form-check-input"><b>Custom Command</b><br>
+<input type="radio" name="myradio" value="remove" class="form-check-input"><b>Remove all files from rapidleech</b><br>
+<input type="radio" name="myradio" value="rename" class="form-check-input" id="rename" ><b>Rename a File or Foler</b><br>
 <input type="text" class="form-control" name="cmd" placeholder="Enter your folder or file name here" id="enter"><br>
-<div clas=="control-group" id="rename0">
-	<label class="control-label" for="rename0" id="rename0"></label>
-	<div class="controls" id="rename0">
-		<input type="text" class="form-control" name="rename1" placeholder="Original Name"><b> To </b>
-		<input type="text" class="form-control" name="rename2" placeholder="Modified Name">
-	</div>
-	</div>
+
 	<input type="submit" value="Exceute" class="btn btn-primary" name="execute"><br><br>
 </form>
 	
