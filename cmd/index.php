@@ -19,7 +19,7 @@ if (isset($_POST['cmd'])) {
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script>
 $(document).ready(function(){
-    $('input[name$=="rename"]').click(function(){
+    $('input[name$=="myradio"]').click(function(){
         var test = $(this).attr("value");
 	   $("div.desc").hide();
            $("#"+test+"0")
