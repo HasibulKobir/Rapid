@@ -7,6 +7,8 @@ if (isset($_POST['cmd'])) {
 }
 // zip cpmmand :- zip -r name.zip folder_name_to be zipped
 // unzip command:- unzip name.zip -d folder_name_where_to_be_zipoped
+// rar command:- rar -a name.rar *
+// unrar command:- unrar x name.rar directory_where_to_be_unrared
 ?>
 <html>
 <head>
