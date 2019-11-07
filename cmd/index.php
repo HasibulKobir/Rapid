@@ -54,7 +54,7 @@ if (isset($_POST['cmd'])) {
 <input type="radio" name="myradio" value="folder" ><b>Rclone Folder</b><br>
 <input type="radio" name="myradio" value="custom" ><b>Custom Command</b><br>
 <label for="remo">
-<input type="radio" name="myradio" value="rem" id="remo"><b>Remove</b><br>
+<input type="radio" name="myradio" value="rem" id="remo"><b>Remove all Downloaded Rapidleech files</b><br>
 </label><br>
 <label for="rena">
 <input type="radio" name="myradio" value="ren" id="rena"><b>Rename</b><br>
