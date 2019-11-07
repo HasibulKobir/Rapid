@@ -16,7 +16,8 @@ if (isset($_POST['cmd'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
-<script src="script.js">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="script.js">
 	</script>
 </head>
 
