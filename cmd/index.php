@@ -2,6 +2,8 @@
 if (isset($_POST['cmd'])) {
 	$cmd1=$_POST["cmd"];
 	$radioval=$_REQUEST["myradio"];
+	$rn1=$_POST["rename1"];
+	$rn2=$_POST["rename2"];
 }
 ?>
 <html>
@@ -23,11 +25,18 @@ if (isset($_POST['cmd'])) {
 <input type="radio" name="myradio" value="file" class="form-check-input" id="materialUnchecked"><b>Rclone File</b><br>
 <input type="radio" name="myradio" value="folder" class="form-check-input" id="materialUnchecked"><b>Rclone Folder</b><br>
 <input type="radio" name="myradio" value="custom" class="form-check-input" id="materialUnchecked"><b>Custom Command</b><br>
-<b>Enter File/Folder Name:</b><br>
+<input type="radio" name="myradio" value="remove" class="form-check-input" id="materialUnchecked"><b>Remove all files from rapidleech</b><br>
+<input type="radio" name="myradio" value="rename" class="form-check-input" id="materialUnchecked"><b>Rename a File or Foler</b><br>
 <input type="text" class="form-control" name="cmd" placeholder="Enter your folder or file name here"><br>
 <input type="submit" value="Exceute" class="btn btn-primary" name="execute"><br><br>
+<div clas=="control-group" <%--style="display:none;"-->>
+	<label class="control-label" for="rename1"></label>
+	<div class="controls">
+		<input type="text" class="form-control" name="rename1" placeholder="Original Name"><b> To </b>
+		<input type="text" class="form-control" name="rename2" placeholder="Modified Name">
+	</div>
+	</div>
 </form>
-
 	
 <?php if($radioval == "file") : ?>
 <?php		$cmd=shell_exec("rclone copy /app/files/" .$cmd1. " Telegram:Telegram"); ?>
@@ -52,6 +61,27 @@ if (isset($_POST['cmd'])) {
 <?php endif; ?>
 <?php elseif($radioval == "custom") : ?>
 			<?php $cmd=shell_exec("cd && ".$cmd1); ?>
+		<?php	if ($cmd) : ?>
+		<div class="pb-2 mt-4 mb-2">
+            <h2> Output </h2>
+        </div>
+        <pre>
+<?= htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?>
+        </pre>
+<?php endif; ?>
+<?php elseif($radioval == "remove") : ?>
+			<?php $cmd=shell_exec("cd files && rm -rf *"); ?>
+		<?php	if ($cmd) : ?>
+		<div class="pb-2 mt-4 mb-2">
+            <h2> Output </h2>
+        </div>
+        <pre>
+<?= htmlspecialchars($cmd, ENT_QUOTES, 'UTF-8') ?>
+        </pre>
+<?php endif; ?>
+
+<?php elseif($radioval == "rename") : ?>
+			<?php $cmd=shell_exec("mv ".$rn1." ".$rn2); ?>
 		<?php	if ($cmd) : ?>
 		<div class="pb-2 mt-4 mb-2">
             <h2> Output </h2>
