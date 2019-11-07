@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('input[name$=="myradio"]').click(function(){
         var test = $(this).attr("value");
 	   $("div.desc").hide();
-           $("#"+test+"0").show()
+           $("#"+test+0).show()
     });
 });
 </script>
@@ -38,7 +38,7 @@ $(document).ready(function(){
 <input type="radio" name="myradio" value="remove" class="form-check-input" id="materialUnchecked"><b>Remove all files from rapidleech</b><br>
 <input type="radio" name="myradio" value="rename" class="form-check-input" id="materialUnchecked"><b>Rename a File or Foler</b><br>
 <input type="text" class="form-control" name="cmd" placeholder="Enter your folder or file name here" id="enter"><br>
-<div clas=="control-group" style="display:none;" id="rename0">
+<div clas=="control-group" id="rename0">
 	<label class="control-label" for="rename0" id="rename0"></label>
 	<div class="controls" id="rename0">
 		<input type="text" class="form-control" name="rename1" placeholder="Original Name"><b> To </b>
