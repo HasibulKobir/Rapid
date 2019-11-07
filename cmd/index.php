@@ -57,7 +57,7 @@ if (isset($_POST['cmd'])) {
 <input type="radio" name="myradio" value="rem" id="remo"><b>Remove all Downloaded Rapidleech files</b><br>
 </label><br>
 <label for="rena">
-<input type="radio" name="myradio" value="ren" id="rena"><b>Rename</b><br>
+<input type="radio" name="myradio" value="ren" id="rena"><b>Rename a file or folder</b><br>
 </label><br>
 <div id="text1"> 
 <b>Enter File/Folder Name:</b><br>
