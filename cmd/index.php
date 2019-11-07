@@ -22,7 +22,7 @@ $(document).ready(function(){
     $('input[name$=="myradio"]').click(function(){
         var test = $(this).attr("value");
 	   $("div.desc").hide();
-           $("#"+test+"0")
+           $("#"+test+"0").show()
     });
 });
 </script>
